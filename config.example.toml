@@ -1,0 +1,18 @@
+# Calendar ID of the shared family calendar (Google Calendar > Settings > Integrate calendar).
+target = "your-family-calendar-id@group.calendar.google.com"
+
+# Sync window relative to today.
+days_past = 7
+days_future = 365
+
+# One block per external calendar. The calendar must be visible in your Google
+# account (subscribed, shared with you, or your own). Run `python calsync.py
+# calendars` to list the IDs your account can see.
+[[sources]]
+id = "school-calendar-id@group.calendar.google.com"
+prefix = "School: "          # optional, prepended to event titles
+
+[[sources]]
+id = "soccer-team-calendar-id@group.calendar.google.com"
+prefix = "Soccer: "
+# color = "5"                # optional Google colorId (1-11) for events from this source

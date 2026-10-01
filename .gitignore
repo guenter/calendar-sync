@@ -1,0 +1,13 @@
+# Secrets
+credentials.json
+token.json
+
+# Local config (contains calendar IDs)
+config.toml
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+
+.DS_Store
